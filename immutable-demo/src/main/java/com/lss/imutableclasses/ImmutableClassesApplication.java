@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ImutableClassesApplication {
+public class ImmutableClassesApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ImutableClassesApplication.class, args);
+        SpringApplication.run(ImmutableClassesApplication.class, args);
     }
 
 }
