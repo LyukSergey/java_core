@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/imutable-classes/imutable-classes.iml" filepath="$PROJECT_DIR$/imutable-classes/imutable-classes.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java_core.iml" filepath="$PROJECT_DIR$/.idea/java_core.iml" />
       <module fileurl="file://$PROJECT_DIR$/m1/m1.iml" filepath="$PROJECT_DIR$/m1/m1.iml" />
     </modules>
