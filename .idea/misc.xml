@@ -5,6 +5,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/imutable-classes/pom.xml" />
+        <option value="$PROJECT_DIR$/immutable-wrong-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/immutable-demo/pom.xml" />
       </list>
     </option>
   </component>
