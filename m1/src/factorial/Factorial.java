@@ -3,7 +3,7 @@ package factorial;
 public class Factorial {
 
     public static void main(String[] args) {
-        int n = 0; // Число, для якого потрібно обчислити факторіал
+        int n = 4; // Число, для якого потрібно обчислити факторіал
         final long startTime = System.nanoTime();
         System.out.println("Factorial of " + n + " is: " + factorial(n));
         final long duration = System.nanoTime() - startTime;
