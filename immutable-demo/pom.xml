@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.lss</groupId>
-    <artifactId>immutable-wrong-demo</artifactId>
+    <artifactId>immutable-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>immutable-wrong-demo</name>
     <description>immutable-wrong-demo</description>
