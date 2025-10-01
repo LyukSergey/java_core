@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
-@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class Balance {
@@ -18,6 +17,10 @@ public class Balance {
     public Balance(Balance other) {
         this.total = other.total;
         this.currency = other.currency;
+    }
+
+    public Balance withTotal(BigDecimal total) {
+        return new Balance(total, this.currency);
     }
 
 }

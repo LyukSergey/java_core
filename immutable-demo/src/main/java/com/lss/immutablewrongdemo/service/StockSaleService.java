@@ -36,8 +36,8 @@ public class StockSaleService {
             }
             final Balance oldBalance = account.getBalance();
             final BigDecimal newTotal = oldBalance.getTotal().add(BigDecimal.valueOf(1));// Simulate some processing time
-            final Balance balance = account.getBalance();
-            balance.setTotal(newTotal);
+            final Balance balance = account.getBalance().withTotal(newTotal);
+
             if (properties.isMutable()) {
                 log.info("[TRANSACTION_SERVICE] [Thread: {}] Mutable", Thread.currentThread().getName());
             } else {
