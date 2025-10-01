@@ -1,6 +1,7 @@
 package com.lss.immutablewrongdemo.entity;
 
 import java.math.BigDecimal;
+import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,11 +11,12 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class MutableAccount {
+public class MutableAccount implements Account {
 
     private String id;
     private String name;
-    private BigDecimal balance;
+    private Balance balance;
+    private List<Transaction> transactionHistory;
 
     @Override
     public String toString() {

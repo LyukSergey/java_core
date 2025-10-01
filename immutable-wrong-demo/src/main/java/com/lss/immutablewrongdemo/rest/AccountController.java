@@ -16,8 +16,15 @@ public class AccountController {
     private final StockSaleService transactionService;
     private final PortfolioService portfolioService;
 
-    @GetMapping("/portfolio")
+    @GetMapping("/mutable/portfolio")
     public ResponseEntity<PortfolioDto> calculatePortfolio() {
+        // Simulate a stock sale transaction that modifies the account balance while we are calculating the total
+        BigDecimal calculatedTotal = portfolioService.calculatePortfolioTotal();
+        return ResponseEntity.ok(new PortfolioDto(calculatedTotal));
+    }
+
+    @GetMapping("/immutable/portfolio")
+    public ResponseEntity<PortfolioDto> calculatePortfolioImmutable() {
         // Simulate a stock sale transaction that modifies the account balance while we are calculating the total
         BigDecimal calculatedTotal = portfolioService.calculatePortfolioTotal();
         return ResponseEntity.ok(new PortfolioDto(calculatedTotal));

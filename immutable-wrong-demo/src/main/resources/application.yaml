@@ -1,3 +1,6 @@
 spring:
   application:
     name: immutable-wrong-demo
+
+app:
+  mutable: false
