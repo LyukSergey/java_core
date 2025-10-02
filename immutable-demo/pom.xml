@@ -11,8 +11,8 @@
     <groupId>com.lss</groupId>
     <artifactId>immutable-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>immutable-wrong-demo</name>
-    <description>immutable-wrong-demo</description>
+    <name>immutable-demo</name>
+    <description>immutable-demo</description>
     <url/>
     <licenses>
         <license/>
@@ -43,6 +43,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>
